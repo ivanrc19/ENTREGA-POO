@@ -2,7 +2,7 @@ package model;
 
 public class Libro {
     private Autor autor;
-    private String[] titulo;
+    private String titulo;
     private int Ano_publicacion;
     private int paginas;
     private float precio;
@@ -15,10 +15,10 @@ public class Libro {
     public void setAutor(Autor autor) {
         this.autor = autor;
     }
-    public String[] getTitulo() {
+    public String getTitulo() {
         return titulo;
     }
-    public void setTitulo(String[] titulo) {
+    public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
     public int getAno_publicacion() {
@@ -45,4 +45,15 @@ public class Libro {
         tiempolectura= pagslibro/tiempopagina;
         return tiempolectura;
     }
+
+
+    public Libro(Autor autor, String titulo, int ano_publicacion, int paginas, float precio) {
+        this.autor = autor;
+        this.titulo = titulo;
+        Ano_publicacion = ano_publicacion;
+        this.paginas = paginas;
+        this.precio = precio;
+    }
+
+
 }
